@@ -1,5 +1,7 @@
 This is a self-hosted, Python-based messaging application that prioritizes security and privacy. The software features a Discord-like interface with direct messaging and group chat functionality, built using PyQt6 for a smooth and modern user experience.
 
+TODO: Optimize code and fix minor errors
+
 🔒 Security & Encryption
 -128-bit Encryption: All messages are encrypted using a 128-bit encryption key, ensuring data confidentiality during transmission.
 -Server-Side Storage: User information and message history are securely stored on the server, minimizing the risk of data leaks on the client side.
