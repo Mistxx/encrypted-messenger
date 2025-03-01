@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field, EmailStr
 from database import Database
 
 # Initialize FastAPI app
-app = FastAPI(title="SecureConnect ServerSide")
+app = FastAPI(title="SecureConnect Server")
 
 # Add CORS middleware
 app.add_middleware(
@@ -123,7 +123,7 @@ def generate_token() -> str:
 # Routes
 @app.get("/")
 async def root():
-    return {"message": "SecureConnect ServerSide API"}
+    return {"message": "SecureConnect Server API"}
 
 
 # Authentication routes
@@ -433,18 +433,7 @@ async def get_group_members(group_id: int, user_id: int = Depends(get_current_us
 
 # Backup routes
 @app.post("/api/users/backup")
-async def True,
-
-
-"members": members
-}
-
-# Backup routes
-@app.post("/api/users/backup")
-async
-
-
-def backup_user_data(request: Request, user_id: int = Depends(get_current_user)):
+async def backup_user_data(request: Request, user_id: int = Depends(get_current_user)):
     # Get the request body as JSON
     backup_data = await request.json()
 
@@ -484,3 +473,4 @@ async def restore_user_data(user_id: int = Depends(get_current_user)):
 # Main entry point
 if __name__ == "__main__":
     uvicorn.run("server:app", host="0.0.0.0", port=8000, reload=True)
+
