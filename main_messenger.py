@@ -39,7 +39,7 @@ class MessengerWindow(QtWidgets.QWidget):
         super().__init__()
         self.setWindowTitle("SecureConnect Messenger")
         self.setWindowIcon(QtGui.QIcon('SecureConnect Logo.webp'))  # Set the window icon
-        self.setGeometry(100, 100, 1000, 500)  # Make the window shorter
+        self.setGeometry(100, 100, 1000, 500)
         self.setFixedSize(1000, 500)  # Lock the window size
         self.init_ui()
         self.chat_history = {}
@@ -51,7 +51,7 @@ class MessengerWindow(QtWidgets.QWidget):
         top_bar_layout = QtWidgets.QHBoxLayout()
         top_bar_layout.addStretch(1)
 
-        # Make the search bar longer by setting a fixed size
+
         self.search_input = QtWidgets.QLineEdit()
         self.search_input.setPlaceholderText("Search for users...")
         self.search_input.setStyleSheet("background-color: #40444B; color: white; padding: 5px; border-radius: 5px;")
@@ -91,7 +91,7 @@ class MessengerWindow(QtWidgets.QWidget):
 
         main_content_layout.addLayout(sidebar_layout, 1)
 
-        # Set the chat area background to dark grey
+
         self.chat_area = QtWidgets.QTextEdit()
         self.chat_area.setReadOnly(True)
         self.chat_area.setStyleSheet("background-color: #2C2F38; color: white; padding: 10px;")

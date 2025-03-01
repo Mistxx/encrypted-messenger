@@ -88,7 +88,6 @@ class LoginWindow(QtWidgets.QWidget):
                 QtWidgets.QMessageBox.warning(self, "Error", "Encryption failed. Please try again.")
             else:
                 self.login_success.emit(username)
-                # Print encrypted username and password
                 print(f"Encrypted Username: {encrypted_username}")
                 print(f"Encrypted Password: {encrypted_password}")
 
