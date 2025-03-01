@@ -1,0 +1,5 @@
+-only save messages with friends, save group messages server side and pull file when app is opened
+-upload history to account file server side when app is closed
+-save nothing client side or encrypt data
+-store keys server side ('F4AFE9B89DD4FF1B7D5ECFBF4B625' referenced in creation line 85 and login line 75 as PLACE HOLDER, NON OPERATIONAL KEY)
+-fake user data currently hard coded for testing
